@@ -30,6 +30,7 @@ class GiphyApp extends React.Component{
             <div>
                 <button onClick={this._getGiphy}>Happy Valentine's Day!</button>
                 <br />
+                <br />
                 <GiphyImg source={this.state.giphy} />
             </div>
         );

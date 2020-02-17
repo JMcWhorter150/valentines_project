@@ -2,7 +2,9 @@ import React from 'react';
 
 function GiphyImg({source}) {
     return(
-        <img src={source} />
+        <div className="pictureFrame">
+            <img src={source} />
+        </div>
     );
 }
 
