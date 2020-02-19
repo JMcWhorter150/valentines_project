@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import GiphyImg from './GiphyImg';
 
-const giphyUrl = `https://api.giphy.com/v1/gifs/random?api_key=9IoUcDTPeIbQWdkdVYX0CBuBZuhMfNEk&tag=valentines&rating=R`;
+const giphyUrl = `https://api.giphy.com/v1/gifs/random?api_key=9IoUcDTPeIbQWdkdVYX0CBuBZuhMfNEk&tag=miss you&rating=R`;
 
 class GiphyApp extends React.Component{
     constructor(props) {
@@ -28,7 +28,7 @@ class GiphyApp extends React.Component{
     render() {
         return(
             <div>
-                <button onClick={this._getGiphy}>Happy Valentine's Day!</button>
+                <button onClick={this._getGiphy}>Miss you!</button>
                 <br />
                 <br />
                 <GiphyImg source={this.state.giphy} />

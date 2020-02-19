@@ -32,7 +32,7 @@ export default class TodayDate extends React.Component{
         const joeDay = new Date(this.state.date);
         const newDays = Math.ceil((joeDay.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
         this.setState({
-            days: newDays
+            days: newDays + 1
     })
 }
 }
